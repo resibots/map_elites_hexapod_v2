@@ -110,9 +110,10 @@ sudo apt-get install libtbb-dev
 - Go to your `sferes2` root directory
 - Go to the modules folder: `cd modules`
 - Get the map elites module: `git clone https://github.com/sferes2/map_elites.git`
+  - Add `map_elites` to your modules.conf file in the sferes folder 
 - Go back to your `sferes` directory
 - Configure for compilation: `./waf configure`
-    - You can add other options if you want, like: `--cpp11=yes` to force C++11 compilation
+    - You can add other options if you want, like: `--cpp14=yes` to force C++14 compilation
 - Compile sferes2 with: `./waf`
 - Create an experiment folder (if there's none) and cd to it: `mkdir exp && cd exp`
 - Clone map_elites_hexapod_v2: `git clone https://github.com/resibots/map_elites_hexapod_v2.git`
